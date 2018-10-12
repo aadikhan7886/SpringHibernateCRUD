@@ -4,6 +4,8 @@ import java.util.List;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.sun.media.jfxmedia.logging.Logger;
+
 public class UniversityTestMain {
 
 	public static void main(String[] args) {
@@ -33,13 +35,10 @@ ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("spr
 		}
 		System.out.println("-----------------------------------------------------------------------------------------------------------------------------");
 		 university3 = new University(40, "Chennei", "Chennei");
-		System.out.println("\n University updated");
 		universityDAO.updateUniversity(university3);
 		System.out.println("-----------------------------------------------------------------------------------------------------------------------------");
-		System.out.println("Retrieve University where id is 20 : ");
 		universityDAO.getUniversityById(20);
 		System.out.println("-----------------------------------------------------------------------------------------------------------------------------");
-		System.out.println("Delete University where id is 30");
 		universityDAO.removeUniversity(30);
 		context.close();	
 	}
