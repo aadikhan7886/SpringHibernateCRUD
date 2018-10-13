@@ -7,11 +7,13 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+
 public class UniversityDAOImpl implements UniversityDAO {
 	static final Logger logger = LoggerFactory.getLogger(UniversityDAO.class);
 	private SessionFactory sessionFactory;
 	public Session session;
-	//Transaction transaction;
+	Transaction transaction;
 
 	public SessionFactory getSessionFactory() {
 		return sessionFactory;
@@ -43,17 +45,16 @@ public class UniversityDAOImpl implements UniversityDAO {
 	}
 
 	public void updateUniversity(University p) {
-		logger.info("Data Ready to save");
+		logger.info("Data Ready to update");
 		Transaction trns = null;
 		Session session = this.sessionFactory.openSession();
 		try {
 			trns = session.beginTransaction();
 			session.update(p);
-			
 			session.getTransaction().commit();
 			logger.debug("Record Updated");
 		} catch (RuntimeException e) {
-			logger.warn("Record not Updated");
+			logger.warn("Exception occured while updation");
 			if (trns != null) {
 				trns.rollback();
 			}
@@ -71,7 +72,7 @@ public class UniversityDAOImpl implements UniversityDAO {
 			System.out.println(p);
 		}
 		return universityList;
-	}
+}
 
 	public University getUniversityById(int id) {
 		Transaction trns = null;
@@ -80,7 +81,7 @@ public class UniversityDAOImpl implements UniversityDAO {
 		University getUni = null;
 		try {
 			getUni = (University) session.load(University.class, id);
-			logger.debug("getting data...");
+			logger.info("getting data...");
 			System.out.println(getUni);
 			return getUni;
 		} catch (RuntimeException e) {
