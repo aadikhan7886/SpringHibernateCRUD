@@ -1,0 +1,7 @@
+[INFO] 2018-10-13 19:00:13,634 com.scp.SpringHibernateCRUD.UniversityDAO addUniversity - Ready to save
+[INFO] 2018-10-13 19:00:13,712 com.scp.SpringHibernateCRUD.UniversityDAO addUniversity - Ready to save
+[INFO] 2018-10-13 19:00:13,712 com.scp.SpringHibernateCRUD.UniversityDAO addUniversity - Ready to save
+[INFO] 2018-10-13 19:00:13,712 com.scp.SpringHibernateCRUD.UniversityDAO addUniversity - Ready to save
+[INFO] 2018-10-13 19:00:13,726 com.scp.SpringHibernateCRUD.UniversityDAO getUniversityById - Retrieving data by ID 30
+[INFO] 2018-10-13 19:00:13,728 com.scp.SpringHibernateCRUD.UniversityDAO getUniversityById - getting data...
+[INFO] 2018-10-13 19:00:13,759 com.scp.SpringHibernateCRUD.UniversityDAO getUniversityById - Data Retrieved....

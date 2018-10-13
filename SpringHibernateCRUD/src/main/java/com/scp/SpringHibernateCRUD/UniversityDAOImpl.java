@@ -25,22 +25,19 @@ public class UniversityDAOImpl implements UniversityDAO {
 
 	public void addUniversity(University p) {
 		logger.info("Ready to save");
-		Transaction trns = null;
+		Transaction trns;
 		Session session = this.sessionFactory.openSession();
 		try {
 			trns = session.beginTransaction();
 			session.persist(p);
-			session.flush();
 			trns.commit();
 			logger.info("Data saved ");
 			//session.close();
 		} catch (RuntimeException e) {
-			if (trns != null) {
-				trns.rollback();
-			}
+			
 		} finally {
-			//session.flush();
-			// session.close();
+			 session.close();
+			
 		}
 	}
 
@@ -60,8 +57,7 @@ public class UniversityDAOImpl implements UniversityDAO {
 			}
 			e.printStackTrace();
 		} finally {
-			// session.flush();
-			// session.close();
+			 session.close();
 		}
 	}
 
@@ -90,8 +86,7 @@ public class UniversityDAOImpl implements UniversityDAO {
 			}
 			e.printStackTrace();
 		} finally {
-			// session.flush();
-			// session.close();
+			 session.close();
 		}
 		logger.info("Data Retrieved....");
 		return getUni;
@@ -114,8 +109,7 @@ public class UniversityDAOImpl implements UniversityDAO {
 			}
 			e.printStackTrace();
 		} finally {
-			// session.flush();
-			// session.close();
+			 session.close();
 		}
 
 	}

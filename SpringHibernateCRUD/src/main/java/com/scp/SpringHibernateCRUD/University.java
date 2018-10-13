@@ -5,7 +5,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 
 @Entity
@@ -27,14 +26,6 @@ class University {
 		this.college = college;
 	}
 
-	public int getUniversityId() {
-		return universityId;
-	}
-
-	public void setUniversityId(int universityId) {
-		this.universityId = universityId;
-	}
-
 	public String getUniversityName() {
 		return universityName;
 	}
@@ -51,9 +42,8 @@ class University {
 		this.city = city;
 	}
 
-	public University(int universityId, String universityName, String city,College college) {
+	public University(String universityName, String city,College college) {
 		super();
-		this.universityId = universityId;
 		this.universityName = universityName;
 		this.city = city;
 		this.college = college;
@@ -78,14 +68,6 @@ class College {
 	private int collegeId;
 	private String collegeName;
 
-	public int getCollegeId() {
-		return collegeId;
-	}
-
-	public void setCollegeId(int collegeId) {
-		this.collegeId = collegeId;
-	}
-
 	public String getCollegeName() {
 		return collegeName;
 	}
@@ -94,9 +76,8 @@ class College {
 		this.collegeName = collegeName;
 	}
 
-	public College(int collegeId, String collegeName) {
+	public College(String collegeName) {
 		super();
-		this.collegeId = collegeId;
 		this.collegeName = collegeName;
 	}
 

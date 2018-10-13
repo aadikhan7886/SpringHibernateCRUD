@@ -1,0 +1,16 @@
+[INFO] 2018-10-13 19:05:49,805 com.scp.SpringHibernateCRUD.UniversityDAO addUniversity - Ready to save
+[INFO] 2018-10-13 19:05:49,980 com.scp.SpringHibernateCRUD.UniversityDAO addUniversity - Data saved 
+[INFO] 2018-10-13 19:05:49,980 com.scp.SpringHibernateCRUD.UniversityDAO addUniversity - Ready to save
+[INFO] 2018-10-13 19:05:50,136 com.scp.SpringHibernateCRUD.UniversityDAO addUniversity - Data saved 
+[INFO] 2018-10-13 19:05:50,136 com.scp.SpringHibernateCRUD.UniversityDAO addUniversity - Ready to save
+[INFO] 2018-10-13 19:05:50,249 com.scp.SpringHibernateCRUD.UniversityDAO addUniversity - Data saved 
+[INFO] 2018-10-13 19:05:50,249 com.scp.SpringHibernateCRUD.UniversityDAO addUniversity - Ready to save
+[INFO] 2018-10-13 19:05:50,296 com.scp.SpringHibernateCRUD.UniversityDAO addUniversity - Data saved 
+[INFO] 2018-10-13 19:05:50,511 com.scp.SpringHibernateCRUD.UniversityDAO getUniversityById - Retrieving data by ID 3
+[INFO] 2018-10-13 19:05:50,527 com.scp.SpringHibernateCRUD.UniversityDAO getUniversityById - getting data...
+[INFO] 2018-10-13 19:05:50,542 com.scp.SpringHibernateCRUD.UniversityDAO updateUniversity - Data Ready to update
+[DEBUG] 2018-10-13 19:05:50,605 com.scp.SpringHibernateCRUD.UniversityDAO updateUniversity - Record Updated
+[INFO] 2018-10-13 19:05:50,605 com.scp.SpringHibernateCRUD.UniversityDAO getUniversityById - Retrieving data by ID 2
+[INFO] 2018-10-13 19:05:50,605 com.scp.SpringHibernateCRUD.UniversityDAO getUniversityById - getting data...
+[INFO] 2018-10-13 19:05:50,605 com.scp.SpringHibernateCRUD.UniversityDAO removeUniversity - Removed data by id 4
+[INFO] 2018-10-13 19:05:50,667 com.scp.SpringHibernateCRUD.UniversityDAO removeUniversity - Record Removed...
